@@ -1,0 +1,19 @@
+.usersList {
+  list-style: none;
+  padding: 10px;
+  margin: 15px;
+}
+
+.userListItem {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid red;
+}
+
+.userListItem img {
+  border-radius: 50%;
+  margin-right: 10px;
+}

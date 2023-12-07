@@ -1,5 +1,6 @@
 import { useState } from "react";
 import UserListItem from "../UserListItem/UserListItem";
+import style from "../UserListItem/index.module.css";
 
 const userDb = [
   {
@@ -46,7 +47,7 @@ function UsersList() {
       />
     );
   }
-  return <ul>{users.map(mapUsers)}</ul>;
+  return <ul className={style.usersList}>{users.map(mapUsers)}</ul>;
 }
 
 export default UsersList;
