@@ -2,15 +2,18 @@
   list-style: none;
   padding: 10px;
   margin: 15px;
+  background-color: blue;
 }
 
 .userListItem {
   border-bottom: 1px solid #ccc;
   padding: 10px;
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: 2px solid red;
+  background-color: white;
 }
 
 .userListItem img {

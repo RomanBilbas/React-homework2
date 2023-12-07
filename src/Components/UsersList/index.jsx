@@ -27,10 +27,45 @@ const userDb = [
     photoSrc:
       "https://w7.pngwing.com/pngs/915/511/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png",
   },
+  {
+    id: 4,
+    firstName: "Ivo",
+    lastName: "Ivovich",
+    age: 30,
+    photoSrc:
+      "https://png.pngtree.com/element_our/png_detail/20181206/users-vector-icon-png_260862.jpg",
+  },
+  {
+    id: 5,
+    firstName: "Ivo",
+    lastName: "Ivovich",
+    age: 30,
+    photoSrc:
+      "https://png.pngtree.com/element_our/png_detail/20181206/users-vector-icon-png_260862.jpg",
+  },
+  {
+    id: 6,
+    firstName: "Ivo",
+    lastName: "Ivovich",
+    age: 30,
+    photoSrc:
+      "https://png.pngtree.com/element_our/png_detail/20181206/users-vector-icon-png_260862.jpg",
+  },
 ];
 function UsersList() {
-  const [users, setUsers] = useState(userDb);
+  const [users, setUsers] = useState(
+    userDb.map((u) => ({ ...u, isSelected: false }))
+  );
 
+  function selectUser(index) {
+    const usersCopy = [...users];
+    usersCopy[index] = {
+      ...usersCopy[index],
+      isSelected: !users[index].isSelected,
+    };
+
+    setUsers(usersCopy);
+  }
   function buttondelete(index) {
     const usersCopy = [...users];
     usersCopy.splice(index, 1);
@@ -44,6 +79,7 @@ function UsersList() {
         user={u}
         index={index}
         buttondelete={buttondelete}
+        selectUser={selectUser}
       />
     );
   }
