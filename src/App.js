@@ -1,10 +1,9 @@
 import "./App.css";
-import UsersList from "./Components/UsersList";
-
+import SignUpForm from "./Components/SignUp Form";
 function App() {
   return (
     <>
-      <UsersList />
+      <SignUpForm />
     </>
   );
 }
