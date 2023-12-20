@@ -1,9 +1,10 @@
 import "./App.css";
-import SignUpForm from "./Components/SignUp Form";
+import CurrentWeather from "./Components/Current Weather";
+
 function App() {
   return (
     <>
-      <SignUpForm />
+      <CurrentWeather />
     </>
   );
 }

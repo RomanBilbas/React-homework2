@@ -1,0 +1,44 @@
+form {
+  width: 100%;
+  max-width: 800px;
+  min-width: 500px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+div > span {
+  margin-right: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
