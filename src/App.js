@@ -1,10 +1,10 @@
 import "./App.css";
-import CurrentWeather from "./Components/Current Weather";
+import Slider from "./Components/Slider";
 
 function App() {
   return (
     <>
-      <CurrentWeather />
+      <Slider />
     </>
   );
 }
