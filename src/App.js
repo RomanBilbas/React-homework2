@@ -1,10 +1,11 @@
 import "./App.css";
-import Slider from "./Components/Slider";
+
+import SliderUseEffect from "./Components/Slider/SliderUseEffect";
 
 function App() {
   return (
     <>
-      <Slider />
+      <SliderUseEffect />
     </>
   );
 }
