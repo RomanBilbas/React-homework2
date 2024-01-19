@@ -6,7 +6,7 @@ const initialState = {
     {
       id: uuidv4(),
       isFavorite: false,
-      fullName: 'Roman'
+      fullName: ''
     }
   ]
 }
